@@ -1,0 +1,16 @@
+com\epam\szte\bdd\steps\LoginStep.class
+com\epam\szte\bdd\hooks\Hooks.class
+com\epam\szte\bdd\steps\SearchResultStep.class
+com\epam\szte\bdd\pages\ShoppingCartPage.class
+com\epam\szte\bdd\pages\SearchResultsPage.class
+com\epam\szte\bdd\steps\AccountStep.class
+com\epam\szte\bdd\pages\HomepagePage.class
+com\epam\szte\bdd\steps\CommonStep.class
+com\epam\szte\bdd\pages\LoginPage.class
+com\epam\szte\bdd\runner\CucumberRunnerTest.class
+com\epam\szte\bdd\steps\ShoppingCartStep.class
+com\epam\szte\bdd\utils\PageObject.class
+com\epam\szte\bdd\pages\AccountPage.class
+com\epam\szte\bdd\pages\ProductPage.class
+com\epam\szte\bdd\steps\HomepageStep.class
+com\epam\szte\bdd\pages\CommonPage.class

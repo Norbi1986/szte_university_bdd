@@ -1,0 +1,164 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.szte.bdd.runner.CucumberRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 39, Failures: 2, Errors: 36, Skipped: 0, Time elapsed: 88.925 sec <<< FAILURE!
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.255 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on "Contact us" tab" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.258 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I can see the contuct us page" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.258 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I select Subject Heading "Customer Service"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.258 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I give Email address "asada@sada.com"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.258 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I give Order reference "asdasd"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.258 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I give a Message "asdasdasdasdasdasd"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 12.258 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see my message is "asdasdaskdjla jdlas ldk alsd alsjdl ajdl lads"" is undefined
+
+Login test(Title of your feature)  Time elapsed: 15.851 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is a string containing "Authentication failed."
+     but: was "Welcome to your account. Here you can manage all of your personal information and orders."
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.epam.szte.bdd.steps.AccountStep.the_account_title_should_be(AccountStep.java:21)
+	at ?.The account title should be Authentication failed.(file:src/test/resources/features/Login.feature:12)
+
+Login test(Title of your feature)  Time elapsed: 13.844 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".info-account"}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EPHUSZEW0724', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\NORBER~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56242}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 0654f781bab5d20dbb04a3f669f28cdb
+*** Element info: {Using=css selector, value=.info-account}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.epam.szte.bdd.pages.AccountPage.checkAccountTitleIsContain(AccountPage.java:25)
+	at com.epam.szte.bdd.steps.AccountStep.the_account_title_should_be(AccountStep.java:21)
+	at ?.The account title should be Welcome to your account.(file:src/test/resources/features/Login.feature:12)
+
+Searching for items(Title of your feature)  Time elapsed: 12.852 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: is a string containing "dress"
+     but: was "Printed Summer Dress"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.epam.szte.bdd.steps.SearchResultStep.validateTheSearchResults(SearchResultStep.java:27)
+	at ?.I see the "dress" contained(file:src/test/resources/features/Search.feature:10)
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.682 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on "Women" tab" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.682 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I select "Faded Short Sleeve T-shirts"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.682 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I set Quantity "2"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.682 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the Quantity set to "2"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.682 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I set Size "M"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.682 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the Size set to "M"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I Add to cart" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on  continue shopping" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on "Dress" tab" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I select "Printed Summer Dress"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I set Quantity "2"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the Quantity set to "3"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.683 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I set Size "M"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.684 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the Size set to "L"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.684 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I Add to cart" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.684 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on Cart" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.684 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the added items" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.698 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on "Women" tab" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.698 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I select "Faded Short Sleeve T-shirts"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I set Quantity "2"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the Quantity set to "2"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I set Size "M"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the Size set to "M"" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I Add to cart" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on Cart" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I see the added items" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I click on delete button" is undefined
+
+Add items into the shopping cart(Title of your feature)  Time elapsed: 9.699 sec  <<< ERROR!
+cucumber.runtime.junit.UndefinedThrowable: The step "I can see the cart is empty" is undefined
+

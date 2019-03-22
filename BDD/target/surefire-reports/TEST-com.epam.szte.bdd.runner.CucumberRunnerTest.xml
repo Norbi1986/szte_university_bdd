@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="39" failures="2" name="com.epam.szte.bdd.runner.CucumberRunnerTest" time="413.282" errors="36" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="c:\Users\Norbert_Fabian\SZTE_University\BDD"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="c:\Users\Norbert_Fabian\SZTE_University\BDD"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\NORBER~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\Maven\apache-maven-3.6.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Git\cmd;C:\Program Files\Maven\apache-maven-3.6.0\bin;C:\Program Files (x86)\Python37;C:\Program Files\Amazon\AWSCLI\bin\;C:\PROGRA~2\Groovy\GROOVY~1.6\bin;C:\Program Files\nodejs\;C:\Users\Norbert_Fabian\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.3.4\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.4\bin;;C:\Users\Norbert_Fabian\AppData\Roaming\npm;C:\Users\Norbert_Fabian\.conscript\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\Maven\apache-maven-3.6.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\Maven\apache-maven-3.6.0\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Norbert_Fabian"/>
+    <property name="user.timezone" value="Europe/Prague"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Norbert_Fabian"/>
+    <property name="java.class.path" value="C:\Program Files\Maven\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Maven\apache-maven-3.6.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.255">
+    <error message="The step &quot;I click on &quot;Contact us&quot; tab&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on &quot;Contact us&quot; tab&quot; is undefined
+</error>
+    <system-out>&amp;#27;[32m.&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m</system-out>
+    <system-err>Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 37315
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 22, 2019 12:20:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.258">
+    <error message="The step &quot;I can see the contuct us page&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I can see the contuct us page&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.258">
+    <error message="The step &quot;I select Subject Heading &quot;Customer Service&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I select Subject Heading &quot;Customer Service&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.258">
+    <error message="The step &quot;I give Email address &quot;asada@sada.com&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I give Email address &quot;asada@sada.com&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.258">
+    <error message="The step &quot;I give Order reference &quot;asdasd&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I give Order reference &quot;asdasd&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.258">
+    <error message="The step &quot;I give a Message &quot;asdasdasdasdasdasd&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I give a Message &quot;asdasdasdasdasdasd&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="12.258">
+    <error message="The step &quot;I see my message is &quot;asdasdaskdjla jdlas ldk alsd alsjdl ajdl lads&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see my message is &quot;asdasdaskdjla jdlas ldk alsd alsjdl ajdl lads&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Login test" time="15.851">
+    <failure message="
+Expected: is a string containing &quot;Authentication failed.&quot;
+     but: was &quot;Welcome to your account. Here you can manage all of your personal information and orders.&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is a string containing &quot;Authentication failed.&quot;
+     but: was &quot;Welcome to your account. Here you can manage all of your personal information and orders.&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.epam.szte.bdd.steps.AccountStep.the_account_title_should_be(AccountStep.java:21)
+	at ✽.The account title should be Authentication failed.(file:src/test/resources/features/Login.feature:12)
+</failure>
+    <system-out>&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[31mF&amp;#27;[0m</system-out>
+    <system-err>Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 43572
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 22, 2019 12:20:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="Login test" time="13.844">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.info-account&quot;}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EPHUSZEW0724&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\NORBER~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56242}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 0654f781bab5d20dbb04a3f669f28cdb
+*** Element info: {Using=css selector, value=.info-account}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.info-account&quot;}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EPHUSZEW0724&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\NORBER~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56242}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 0654f781bab5d20dbb04a3f669f28cdb
+*** Element info: {Using=css selector, value=.info-account}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.epam.szte.bdd.pages.AccountPage.checkAccountTitleIsContain(AccountPage.java:25)
+	at com.epam.szte.bdd.steps.AccountStep.the_account_title_should_be(AccountStep.java:21)
+	at ✽.The account title should be Welcome to your account.(file:src/test/resources/features/Login.feature:12)
+</error>
+    <system-out>&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[31mF&amp;#27;[0m</system-out>
+    <system-err>Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 36090
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 22, 2019 12:20:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="Searching for items" time="12.852">
+    <failure message="
+Expected: is a string containing &quot;dress&quot;
+     but: was &quot;Printed Summer Dress&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is a string containing &quot;dress&quot;
+     but: was &quot;Printed Summer Dress&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at com.epam.szte.bdd.steps.SearchResultStep.validateTheSearchResults(SearchResultStep.java:27)
+	at ✽.I see the &quot;dress&quot; contained(file:src/test/resources/features/Search.feature:10)
+</failure>
+    <system-out>&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[32m.&amp;#27;[0m&amp;#27;[31mF&amp;#27;[0m</system-out>
+    <system-err>Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 19679
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 22, 2019 12:20:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="Select the Searched items" time="13.636"/>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.682">
+    <error message="The step &quot;I click on &quot;Women&quot; tab&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on &quot;Women&quot; tab&quot; is undefined
+</error>
+    <system-out>&amp;#27;[32m.&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m</system-out>
+    <system-err>Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 33046
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 22, 2019 12:21:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.682">
+    <error message="The step &quot;I select &quot;Faded Short Sleeve T-shirts&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I select &quot;Faded Short Sleeve T-shirts&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.682">
+    <error message="The step &quot;I set Quantity &quot;2&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I set Quantity &quot;2&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.682">
+    <error message="The step &quot;I see the Quantity set to &quot;2&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the Quantity set to &quot;2&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.682">
+    <error message="The step &quot;I set Size &quot;M&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I set Size &quot;M&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.682">
+    <error message="The step &quot;I see the Size set to &quot;M&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the Size set to &quot;M&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I Add to cart&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I Add to cart&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I click on  continue shopping&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on  continue shopping&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I click on &quot;Dress&quot; tab&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on &quot;Dress&quot; tab&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I select &quot;Printed Summer Dress&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I select &quot;Printed Summer Dress&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I set Quantity &quot;2&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I set Quantity &quot;2&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I see the Quantity set to &quot;3&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the Quantity set to &quot;3&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.683">
+    <error message="The step &quot;I set Size &quot;M&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I set Size &quot;M&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.684">
+    <error message="The step &quot;I see the Size set to &quot;L&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the Size set to &quot;L&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.684">
+    <error message="The step &quot;I Add to cart&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I Add to cart&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.684">
+    <error message="The step &quot;I click on Cart&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on Cart&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.684">
+    <error message="The step &quot;I see the added items&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the added items&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.698">
+    <error message="The step &quot;I click on &quot;Women&quot; tab&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on &quot;Women&quot; tab&quot; is undefined
+</error>
+    <system-out>&amp;#27;[32m.&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m&amp;#27;[33mU&amp;#27;[0m</system-out>
+    <system-err>Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 1927
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mar 22, 2019 12:21:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.698">
+    <error message="The step &quot;I select &quot;Faded Short Sleeve T-shirts&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I select &quot;Faded Short Sleeve T-shirts&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I set Quantity &quot;2&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I set Quantity &quot;2&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I see the Quantity set to &quot;2&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the Quantity set to &quot;2&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I set Size &quot;M&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I set Size &quot;M&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I see the Size set to &quot;M&quot;&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the Size set to &quot;M&quot;&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I Add to cart&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I Add to cart&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I click on Cart&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on Cart&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I see the added items&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I see the added items&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I click on delete button&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I click on delete button&quot; is undefined
+</error>
+  </testcase>
+  <testcase classname="Title of your feature" name="Add items into the shopping cart" time="9.699">
+    <error message="The step &quot;I can see the cart is empty&quot; is undefined" type="cucumber.runtime.junit.UndefinedThrowable">cucumber.runtime.junit.UndefinedThrowable: The step &quot;I can see the cart is empty&quot; is undefined
+</error>
+  </testcase>
+</testsuite>
