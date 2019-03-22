@@ -15,4 +15,3 @@ Feature: Title of your feature
       | user                    | password | accountTitle             |
       | epamuser.test.szte@gmail.com | Tester123  | Authentication failed.   |
       | epamuser.test.szte@gmail.com | usertest | Welcome to your account. |
-

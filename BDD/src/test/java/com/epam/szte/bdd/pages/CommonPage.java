@@ -23,4 +23,7 @@ public class CommonPage extends PageObject {
 	@FindBy(css=".product-name")
 	private List<WebElement> productNames;
 
+	public void clickOnSelectedTab(String tabName) {
+		
+	}
 }

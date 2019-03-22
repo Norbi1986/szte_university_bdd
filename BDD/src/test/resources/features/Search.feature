@@ -15,4 +15,3 @@ Feature: Title of your feature
 		And I click on Search button
 		And I select the "Printed Chiffon Dress" product
 		Then I see the "Printed Chiffon Dress" product page
-		

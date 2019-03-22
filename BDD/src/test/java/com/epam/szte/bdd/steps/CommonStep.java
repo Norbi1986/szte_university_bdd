@@ -19,4 +19,10 @@ public class CommonStep {
 	public void seeTheSelectedProduct(String productName) {
 		
 	}
+	
+	@When("I click on \"([^\"]*)\" tab")
+	public void clickOnSelectedTab(String tabName) {
+		
+	}
+	
 }
