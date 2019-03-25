@@ -6,7 +6,7 @@ Feature: Title of your feature
   	Given I open the My Store page
 		When I click on "Contact us" tab
 		Then I can see the contuct us page
-		When I select Subject Heading "Customer Service" 
+		When I select "Customer Service" Subject Heading
 		And I give Email address "asada@sada.com"
 		And I give Order reference "asdasd"
 		And I give a Message "asdasdasdasdasdasd"

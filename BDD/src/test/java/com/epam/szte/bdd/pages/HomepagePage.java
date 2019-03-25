@@ -24,6 +24,9 @@ public class HomepagePage extends PageObject{
 	@FindBy(css=".button-search")
 	private WebElement searchButton;
 	
+	@FindBy(css=".shopping_cart a")
+	private WebElement shoppingCart;
+	
 	public void clickOnsigInButton() {
 		signInButton.click();
 	}
@@ -38,6 +41,10 @@ public class HomepagePage extends PageObject{
 
 	public void clickOnSearchButton() {
 		searchButton.click();
+	}
+	
+	public void clickOnShoppingCart() {
+		shoppingCart.click();
 	}
 	
 }

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 
 import com.epam.szte.bdd.utils.PageObject;
 
+import net.bytebuddy.implementation.bytecode.Throw;
+
 public class CommonPage extends PageObject {
 
 	private WebDriver driver;
@@ -22,8 +24,22 @@ public class CommonPage extends PageObject {
 	
 	@FindBy(css=".product-name")
 	private List<WebElement> productNames;
+	
+	@FindBy(css="[title=\"Women\"]")
+	private WebElement womenTab;
+	
+	@FindBy(css="[title=\"Dress\"]")
+	private WebElement dressTab;
 
 	public void clickOnSelectedTab(String tabName) {
-		
+		switch (tabName.toLowerCase()) {
+		case "women":
+			womenTab.click();
+			break;
+		case "dress":
+			dressTab.click();			
+		default:
+			System.out.println("The Tab not exist");
+		}
 	}
 }

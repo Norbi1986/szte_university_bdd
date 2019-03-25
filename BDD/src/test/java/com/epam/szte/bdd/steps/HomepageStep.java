@@ -29,4 +29,9 @@ public class HomepageStep {
 	public void clickOnSearchButton() {
 		homepagePage.clickOnSearchButton();
 	}
+	
+	@When("^I click on shopping cart$")
+	public void clickOnShoppingCart() {
+		homepagePage.clickOnShoppingCart();
+	}
 }
