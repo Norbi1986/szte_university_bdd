@@ -9,5 +9,5 @@ Feature: Title of your feature
 		When I select "Customer service" Subject Heading
 		And I write email address "asada@sada.com"
 		And I write order reference "asdasd"
-		And I write message "asdasdasdasdasdasd"
-		Then I see my message is "asdasdaskdjla jdlas ldk alsd alsjdl ajdl lads"
+		And I write message "This is my message"
+		Then I see my message is "This is my message"

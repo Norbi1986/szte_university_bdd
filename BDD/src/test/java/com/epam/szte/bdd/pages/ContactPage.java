@@ -36,12 +36,6 @@ public class ContactPage extends PageObject{
 	}
 
 	public void selectSubjectHeading(String subject) {
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		Select select = new Select(subjectHeading);
 		select.selectByVisibleText(subject);
 	}
@@ -59,7 +53,7 @@ public class ContactPage extends PageObject{
 	}
 	
 	public String getMessage() {
-		return messageField.getText();
+		return messageField.getAttribute("value");
 	}
 	
 	

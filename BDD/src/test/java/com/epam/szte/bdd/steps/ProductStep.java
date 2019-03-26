@@ -35,6 +35,12 @@ public class ProductStep {
 	
 	@When("^I click on continue shopping$")
 	public void clicOnContinueShoppingButton() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		productPage.clickOnContinueShoppingButton();
 	}
 	

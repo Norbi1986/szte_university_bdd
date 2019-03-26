@@ -25,7 +25,7 @@ public class ProductPage extends PageObject {
 	@FindBy(css="#add_to_cart button")
 	private WebElement addToCart;
 	
-	@FindBy(css=".button-container .continue")
+	@FindBy(css=".button-container .continue span")
 	private WebElement continueShopping;
 	
 	public String getSelectedProductName() {
@@ -33,6 +33,7 @@ public class ProductPage extends PageObject {
 	}
 	
 	public void setTheQuantity(String quantity) {
+		productQuantityField.clear();
 		productQuantityField.sendKeys(quantity);
 	}
 	
@@ -62,7 +63,7 @@ public class ProductPage extends PageObject {
 	
 	public String getSelectedSize(String size) {
 		Select select = new Select(productSize);
-		return select.getFirstSelectedOption().toString();
+		return select.getFirstSelectedOption().getText();
 	}
 
 }

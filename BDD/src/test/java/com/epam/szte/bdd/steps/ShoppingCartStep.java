@@ -1,8 +1,13 @@
 package com.epam.szte.bdd.steps;
 
 
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.is;
+
 import java.util.List;
 import java.util.Map;
+
+import org.junit.Assert;
 
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.ShoppingCartPage;
@@ -28,14 +33,16 @@ public class ShoppingCartStep {
 	 * Órai Feladat
 	 */
 	
+	private static String CART_IS_EMPTY = "cart is empty";
+	
 	@When("^I click on delete button$")
 	public void clickOnDeleteButton() {
 		shoppingCartPage.clicOndeleteButton();
 	}
 	
-	@Then("^$")
+	@Then("^I can see the cart is empty$")
 	public void checkEmptyCartAlert() {
-		
+		Assert.assertThat(shoppingCartPage.getAlertMessage(), is(containsString(CART_IS_EMPTY)));
 	}
 	
 }
