@@ -22,7 +22,7 @@ public class CommonPage extends PageObject {
 	@FindBy(css="h1")
 	private WebElement productName;
 	
-	@FindBy(css=".product-name")
+	@FindBy(css="#center_column .product-name")
 	private List<WebElement> productNames;
 	
 	@FindBy(css="[title=\"Women\"]")
@@ -42,4 +42,18 @@ public class CommonPage extends PageObject {
 			System.out.println("The Tab not exist");
 		}
 	}
+	
+	public String getProductName() {
+		return productNames.get(0).getText();
+	}
+	
+	public void clickOnSelectedProduct(String productName) {
+		for(WebElement product : productNames) {
+			if (product.getText().trim().equals(productName)) {
+				product.click();
+				break;
+			}
+		}
+	}
+	
 }

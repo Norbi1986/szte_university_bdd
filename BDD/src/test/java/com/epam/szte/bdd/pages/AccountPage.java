@@ -2,7 +2,9 @@ package com.epam.szte.bdd.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 import com.epam.szte.bdd.utils.PageObject;
 
@@ -18,7 +20,7 @@ public class AccountPage extends PageObject {
 		this.driver = driver;
 	}
 
-	@FindBy(css = ".info-account")
+	@FindAll({@FindBy(css = ".info-account"), @FindBy(css=".alert")})
     private WebElement accountTitle;
     
     public String checkAccountTitleIsContain() {

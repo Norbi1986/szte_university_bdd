@@ -21,5 +21,25 @@ public class ContactStep {
 	public void selectSubvjectHeaeding(String subject) {
 		contactPage.selectSubjectHeading(subject);
 	}
+	
+	@When("^I write email address \"([^\"]*)\"$")
+	public void writeEmailAddress(String email) {
+		contactPage.writeEmailAddress(email);
+	}
+	
+	@When("^I write order reference \"([^\"]*)\"$")
+	public void writeOrderReference(String order) {
+		contactPage.writeOrderReference(order);
+	}
+	
+	@When("^I write message \"([^\"]*)\"$")
+	public void writeMessage(String message) {
+		contactPage.writeMessage(message);
+	}
+	
+	@Then("^I see my message is \"([^\"]*)\"$")
+	public void checkMyMessage(String message) {
+		Assert.assertEquals(message, contactPage.getMessage());
+	}
 
 }

@@ -13,5 +13,5 @@ Feature: Title of your feature
 
     Examples:
       | user                    | password | accountTitle             |
-      | epamuser.test.szte@gmail.com | Tester123  | Authentication failed.   |
-      | epamuser.test.szte@gmail.com | usertest | Welcome to your account. |
+      | epamuser.test.szte@gmail.com | Tester123  | Welcome to your account. |
+      | epamuser.test.szte@gmail.com | usertest | Authentication failed. |

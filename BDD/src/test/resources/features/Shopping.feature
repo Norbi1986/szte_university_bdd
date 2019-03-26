@@ -1,7 +1,7 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  
+  @tag
   Scenario: Add items into the shopping cart
   	Given I open the My Store page
 		When I click on "Women" tab

@@ -8,6 +8,7 @@ import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.ShoppingCartPage;
 
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 
 public class ShoppingCartStep {
@@ -21,7 +22,19 @@ public class ShoppingCartStep {
 			System.out.println(list.get(i).get("First Name"));
 			System.out.println(list.get(i).get("Last Name"));
 		}
-		
+	}
+	
+	/**
+	 * Órai Feladat
+	 */
+	
+	@When("^I click on delete button$")
+	public void clickOnDeleteButton() {
+		shoppingCartPage.clicOndeleteButton();
+	}
+	
+	@Then("^$")
+	public void checkEmptyCartAlert() {
 		
 	}
 	

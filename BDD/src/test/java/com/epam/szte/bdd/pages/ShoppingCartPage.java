@@ -34,5 +34,22 @@ public class ShoppingCartPage  extends PageObject {
 		return null;
 	}
 	
+	/**
+	 * Órai Feladat
+	 */
+	
+	@FindBy(css=".alert")
+	private WebElement alertMessage;
+	
+	@FindBy(css=".cart_delete")
+	private WebElement deleteButton;
+	
+	public void clicOndeleteButton() {
+		deleteButton.click();
+	}
+	
+	public String getAlertMessage() {
+		return alertMessage.getText();
+	}
 	
 }

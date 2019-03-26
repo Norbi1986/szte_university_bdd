@@ -18,15 +18,9 @@ public class SearchResultsPage extends PageObject {
 	@FindBy(css=".center_column .product-listing")
 	WebElement searchResultHeader;
 	
-	@FindBy(css="#center_column .product-name")
-	WebElement productName;
-	
 	public String getSearchResultHeader() {
 		return searchResultHeader.getText();
 	}
 	
-	public String getProductName() {
-		return productName.getText();
-	}
 
 }

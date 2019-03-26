@@ -16,6 +16,9 @@ public class ProductPage extends PageObject {
 		this.driver = driver;
 	}
 	
+	@FindBy(css="[itemprop=\"name\"]")
+	private WebElement productName;
+	
 	@FindBy(css="#quantity_wanted")
 	private WebElement productQuantityField;
 	
@@ -25,12 +28,16 @@ public class ProductPage extends PageObject {
 	@FindBy(css=".button-container .continue")
 	private WebElement continueShopping;
 	
-	public void setTheQuantity(int quantity) {
-		productQuantityField.sendKeys(Integer.toString(quantity));
+	public String getSelectedProductName() {
+		return productName.getText();
+	}
+	
+	public void setTheQuantity(String quantity) {
+		productQuantityField.sendKeys(quantity);
 	}
 	
 	public String getQuantityNumbet() {
-		return productQuantityField.getText();
+		return productQuantityField.getAttribute("value");
 	}
 	
 	public void clickOnAddToCartButton() {
@@ -46,14 +53,16 @@ public class ProductPage extends PageObject {
 	 */
 	
 	@FindBy(css=".attribute_select")
-	private Select productSize;
+	private WebElement productSize;
 	
 	public void selectSize(String size) {
-		productSize.selectByVisibleText(size);
+		Select select = new Select(productSize);
+		select.selectByVisibleText(size);
 	}
 	
 	public String getSelectedSize(String size) {
-		return productSize.getFirstSelectedOption().toString();
+		Select select = new Select(productSize);
+		return select.getFirstSelectedOption().toString();
 	}
 
 }

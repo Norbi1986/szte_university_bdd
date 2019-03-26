@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.epam.szte.bdd.utils.PageObject;
 
-public class HomepagePage extends PageObject{
+public class HomepagePage extends PageObject {
 
 	private WebDriver driver;
 	
@@ -27,6 +27,7 @@ public class HomepagePage extends PageObject{
 	@FindBy(css=".shopping_cart a")
 	private WebElement shoppingCart;
 	
+	
 	public void clickOnsigInButton() {
 		signInButton.click();
 	}
@@ -45,6 +46,18 @@ public class HomepagePage extends PageObject{
 	
 	public void clickOnShoppingCart() {
 		shoppingCart.click();
+	}
+	
+	/**
+	 * Órai Feladat
+	 */
+	
+	
+	@FindBy(css="#contact-link")
+	private WebElement contactButton;
+	
+	public void clickOnContactButton() {
+		contactButton.click();
 	}
 	
 }

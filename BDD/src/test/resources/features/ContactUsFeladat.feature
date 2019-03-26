@@ -4,10 +4,10 @@ Feature: Title of your feature
   
   Scenario: Add items into the shopping cart
   	Given I open the My Store page
-		When I click on "Contact us" tab
+		When I click on Contact us button
 		Then I can see the contuct us page
-		When I select "Customer Service" Subject Heading
-		And I give Email address "asada@sada.com"
-		And I give Order reference "asdasd"
-		And I give a Message "asdasdasdasdasdasd"
+		When I select "Customer service" Subject Heading
+		And I write email address "asada@sada.com"
+		And I write order reference "asdasd"
+		And I write message "asdasdasdasdasdasd"
 		Then I see my message is "asdasdaskdjla jdlas ldk alsd alsjdl ajdl lads"

@@ -12,8 +12,14 @@ public class ProductStep {
 
 	private ProductPage productPage = new ProductPage(Hooks.driver);
 	
-	@When("^I set Quantity number to \"(\\d+)\"$")
-	public void setQuantity(int quantity) {
+	
+	@Then("I see the \"([^\"]*)\" product page$")
+	public void seeTheSelectedProduct(String productName) {
+		Assert.assertEquals(productName, productPage.getSelectedProductName());
+	}
+	
+	@When("^I set Quantity number to \"([^\"]*)\"$")
+	public void setQuantity(String quantity) {
 		productPage.setTheQuantity(quantity);
 	}
 	

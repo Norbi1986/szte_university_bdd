@@ -20,7 +20,7 @@ public class ContactPage extends PageObject{
 	private WebElement contactPage;
 	
 	@FindBy(css="#id_contact")
-	private Select subjectHeading;
+	private WebElement subjectHeading;
 	
 	@FindBy(css="#email")
 	private WebElement emailField;
@@ -36,7 +36,14 @@ public class ContactPage extends PageObject{
 	}
 
 	public void selectSubjectHeading(String subject) {
-		subjectHeading.selectByVisibleText(subject);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Select select = new Select(subjectHeading);
+		select.selectByVisibleText(subject);
 	}
 	
 	public void writeEmailAddress(String email) {
