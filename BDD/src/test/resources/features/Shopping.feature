@@ -1,7 +1,7 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  @tag
+  @shop
   Scenario: Add items into the shopping cart
   	Given I open the My Store page
 		When I click on "Women" tab
@@ -10,7 +10,7 @@ Feature: Title of your feature
 		Then I see the Quantity number is "2"
 		When I click on Add to cart button
 		And I click on continue shopping
-		When I click on "Dress" tab
+		When I click on "Dresses" tab
 		And I select the "Printed Summer Dress" product
 		And I set Quantity number to "3"
 		Then I see the Quantity number is "3"

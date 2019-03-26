@@ -22,6 +22,12 @@ public class CommonStep {
 	
 	@When("I click on \"([^\"]*)\" tab")
 	public void clickOnSelectedTab(String tabName) {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		commonPage.clickOnSelectedTab(tabName);
 	}
 	

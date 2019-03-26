@@ -28,7 +28,7 @@ public class CommonPage extends PageObject {
 	@FindBy(css="[title=\"Women\"]")
 	private WebElement womenTab;
 	
-	@FindBy(css="[title=\"Dress\"]")
+	@FindBy(css="[title=\"Dresses\"]")
 	private WebElement dressTab;
 
 	public void clickOnSelectedTab(String tabName) {
@@ -36,7 +36,7 @@ public class CommonPage extends PageObject {
 		case "women":
 			womenTab.click();
 			break;
-		case "dress":
+		case "dresses":
 			dressTab.click();			
 		default:
 			System.out.println("The Tab not exist");
