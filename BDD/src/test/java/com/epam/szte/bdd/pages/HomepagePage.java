@@ -24,7 +24,7 @@ public class HomepagePage extends PageObject {
 	@FindBy(css=".button-search")
 	private WebElement searchButton;
 	
-	@FindBy(css=".shopping_cart a")
+	@FindBy(css=".shopping_cart")
 	private WebElement shoppingCart;
 	
 	

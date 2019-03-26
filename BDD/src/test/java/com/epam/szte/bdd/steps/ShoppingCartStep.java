@@ -4,11 +4,13 @@ package com.epam.szte.bdd.steps;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
 
+import com.epam.szte.bdd.dao.Product;
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.ShoppingCartPage;
 
@@ -20,13 +22,28 @@ public class ShoppingCartStep {
 
 	private ShoppingCartPage shoppingCartPage = new ShoppingCartPage(Hooks.driver);
 
+	@Then("^I see the shopping cart page$")
+	public void shoppingCartPageIsDisplayed() {
+		Assert.assertTrue("The shopping cart page is not displayed", shoppingCartPage.shoppingCartIsDisplayed()); 
+	}
+	
 	@Then("I see the added items")
 	public void checkTheAddedItems(DataTable dt) {
 		List<Map<String, String>> list = dt.asMaps(String.class, String.class);
-		for(int i=0; i<list.size(); i++) {
-			System.out.println(list.get(i).get("First Name"));
-			System.out.println(list.get(i).get("Last Name"));
+		List<Product> actualProducts = shoppingCartPage.getProducts();
+		List<Product> expectedProducts = new ArrayList<Product>();
+		for(int i = 0; i < list.size(); i++) {
+			Product product = new Product();
+			product.setProductName(list.get(i).get("Description"));
+			product.setUnitProductPrice(list.get(i).get("Unit price"));
+			product.setTotalProductPrice(list.get(i).get("Total"));
+			product.setProductQuantity(list.get(i).get("Qty"));
+			expectedProducts.add(product);
 		}
+		
+		//Assert.assertSame("Not same", expectedProducts.listIterator(), actualProducts.listIterator());
+		//Assert.assertArrayEquals(actualProducts, expectedProducts);
+		Assert.assertEquals(expectedProducts.get(0).getUnitProductPrice(), actualProducts.get(0).getUnitProductPrice());
 	}
 	
 	/**

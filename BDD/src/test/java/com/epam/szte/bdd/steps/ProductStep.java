@@ -44,6 +44,11 @@ public class ProductStep {
 		productPage.clickOnContinueShoppingButton();
 	}
 	
+	@When("^I click on Proceed To Checkout$")
+	public void clickOnProceedToCheckout() {
+		productPage.clickOnProceedToCheckout();
+	}
+	
 	/**
 	 * Órai Feladat
 	 */

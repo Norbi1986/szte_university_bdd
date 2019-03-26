@@ -28,6 +28,9 @@ public class ProductPage extends PageObject {
 	@FindBy(css=".button-container .continue span")
 	private WebElement continueShopping;
 	
+	@FindBy(css=".button-container [title=\"Proceed to checkout\"]")
+	private WebElement proceedToCheckout;
+	
 	public String getSelectedProductName() {
 		return productName.getText();
 	}
@@ -49,6 +52,9 @@ public class ProductPage extends PageObject {
 		continueShopping.click();
 	}
 	
+	public void clickOnProceedToCheckout() {
+		proceedToCheckout.click();
+	}	
 	/**
 	 * Órai Feladat
 	 */

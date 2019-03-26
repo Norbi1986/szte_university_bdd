@@ -12,8 +12,9 @@ Feature: Title of your feature
 		Then I see the selecte Size is "M"
 		When I click on Add to cart button
 		And I click on continue shopping
-		And I click on shopping cart
-		Then I see the added items
+		And I click on Proceed To Checkout
+		Then I see the shopping cart page
+		And I see the added items
 			|Description								|Unit price	|Qty|Total	|
 			|Faded Short Sleeve T-shirts|$16.51			|1	|$16.51	|
 		When I click on delete button
