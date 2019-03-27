@@ -16,7 +16,7 @@ Feature: Title of your feature
 		Then I see the shopping cart page
 		And I see the added items
 			|Description								|Unit price	|Qty|Total	|
-			|Faded Short Sleeve T-shirts|$16.51			|1	|$16.51	|
+			|Faded Short Sleeve T-shirts|$16.51			|2	|$33.02	|
 		When I click on delete button
 		Then I can see the cart is empty
 		

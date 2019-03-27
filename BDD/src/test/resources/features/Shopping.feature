@@ -20,8 +20,8 @@ Feature: Title of your feature
 		Then I see the shopping cart page
 		And I see the added items
 			|Description								|Unit price	|Qty|Total	|
-			|Printed Dress							|$50.99			|3	|$101.98|
-			|Faded Short Sleeve T-shirts|$16.51			|2	|$16.51	|
+			|Printed Dress							|$26.00			|2	|$52.00	|
+			|Faded Short Sleeve T-shirts|$16.51			|3	|$49.53	|
 		
 		
 

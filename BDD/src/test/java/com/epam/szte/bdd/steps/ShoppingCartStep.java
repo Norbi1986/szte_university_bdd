@@ -1,13 +1,19 @@
 package com.epam.szte.bdd.steps;
 
-
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.beans.SamePropertyValuesAs.samePropertyValuesAs;
+import static org.hamcrest.core.StringContains.containsString;
+import static org.hamcrest.core.Every.everyItem;
+import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.hamcrest.collection.IsIterableContainingInAnyOrder;
 import org.junit.Assert;
 
 import com.epam.szte.bdd.dao.Product;
@@ -40,10 +46,11 @@ public class ShoppingCartStep {
 			product.setProductQuantity(list.get(i).get("Qty"));
 			expectedProducts.add(product);
 		}
-		
-		//Assert.assertSame("Not same", expectedProducts.listIterator(), actualProducts.listIterator());
-		//Assert.assertArrayEquals(actualProducts, expectedProducts);
-		Assert.assertEquals(expectedProducts.get(0).getUnitProductPrice(), actualProducts.get(0).getUnitProductPrice());
+		assertThat(actualProducts.size(), equalTo(expectedProducts.size()));
+		Iterator<Product> actualIterator = actualProducts.iterator();
+		for (Product expectedProduct : expectedProducts) {
+			assertThat("failed", actualIterator.next(), samePropertyValuesAs(expectedProduct));
+		}
 	}
 	
 	/**
@@ -59,7 +66,12 @@ public class ShoppingCartStep {
 	
 	@Then("^I can see the cart is empty$")
 	public void checkEmptyCartAlert() {
-		Assert.assertThat(shoppingCartPage.getAlertMessage(), is(containsString(CART_IS_EMPTY)));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		assertThat(shoppingCartPage.getAlertMessage(), containsString(CART_IS_EMPTY));
 	}
 	
 }

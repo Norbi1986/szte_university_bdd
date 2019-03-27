@@ -11,8 +11,7 @@ import cucumber.api.junit.Cucumber;
 		strict = true,
 		features = {"src/test/resources/features"}, 
 		glue = {"com.epam.szte.bdd.hooks", "com.epam.szte.bdd.steps"},
-		plugin = {"html:target/cucumber", "json:target/cucumber-json-report.json","pretty"},
-		tags = {"@shop"}
+		plugin = {"html:target/cucumber", "json:target/cucumber-json-report.json","pretty"}
 )
 public class CucumberRunnerTest {
 

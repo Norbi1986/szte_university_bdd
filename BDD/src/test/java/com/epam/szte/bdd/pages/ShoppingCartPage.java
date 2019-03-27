@@ -42,7 +42,7 @@ public class ShoppingCartPage extends PageObject {
 			product.setProductName(cartItem.findElement(By.cssSelector(PRODUCT_NAME)).getText());
 			product.setUnitProductPrice(cartItem.findElement(By.cssSelector(PRODUCT_UNIT_TOTAL_PRICE)).getText());
 			product.setTotalProductPrice(cartItem.findElement(By.cssSelector(PRODUCT_TOTAL_PRICE)).getText());
-			product.setProductQuantity(cartItem.findElement(By.cssSelector(PRODUCT_QUANTITY)).getText());
+			product.setProductQuantity(cartItem.findElement(By.cssSelector(PRODUCT_QUANTITY)).getAttribute("value"));
 			products.add(product);
 		}
 		return products;
