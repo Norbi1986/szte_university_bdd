@@ -15,6 +15,9 @@ import java.util.Map;
 
 import org.hamcrest.collection.IsIterableContainingInAnyOrder;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.szte.bdd.dao.Product;
 import com.epam.szte.bdd.hooks.Hooks;
@@ -66,11 +69,6 @@ public class ShoppingCartStep {
 	
 	@Then("^I can see the cart is empty$")
 	public void checkEmptyCartAlert() {
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		assertThat(shoppingCartPage.getAlertMessage(), containsString(CART_IS_EMPTY));
 	}
 	

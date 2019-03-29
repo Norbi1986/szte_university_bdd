@@ -2,9 +2,12 @@ package com.epam.szte.bdd.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.szte.bdd.utils.PageObject;
 
@@ -32,6 +35,7 @@ public class CommonPage extends PageObject {
 	private WebElement dressTab;
 
 	public void clickOnSelectedTab(String tabName) {
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".button-container .continue span")));
 		switch (tabName.toLowerCase()) {
 		case "women":
 			womenTab.click();
