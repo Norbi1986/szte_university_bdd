@@ -58,7 +58,7 @@ public class ShoppingCartPage extends PageObject {
 	@FindBy(css=".alert")
 	private WebElement alertMessage;
 	
-	@FindBy(css=".cart_delete")
+	@FindBy(css=".cart_item .cart_quantity_delete")
 	private WebElement deleteButton;
 	
 	public void clicOndeleteButton() {
