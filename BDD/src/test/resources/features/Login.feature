@@ -6,8 +6,7 @@ Feature: Title of your feature
     Given I open the My Store page
     When I click on the Sign in button
     Then I redirect to the login page
-    When I write "<user>" into email field
-    And I write "<password>" into password field
+    When I login with <user> emailaddress and <password> password
     And I click on Login Button
     Then The account title should be <accountTitle>
 

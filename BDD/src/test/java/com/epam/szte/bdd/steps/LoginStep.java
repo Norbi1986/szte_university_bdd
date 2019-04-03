@@ -31,4 +31,10 @@ public class LoginStep {
 	public void redirectedToLoginPage() {
 		Assert.assertTrue("The login form hasn't appeared", loginPage.checkLoginForm());
 	}
+	
+	@When("I login with (.+) emailaddress and (.+) password")
+	public void loginWithEmailAndPassword(String emailAddress, String password) {
+		loginPage.writeEmailAddress(emailAddress);
+		loginPage.writePassword(password);
+	}
 }
