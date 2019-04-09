@@ -35,8 +35,4 @@ public class HomepageStep {
 		homepagePage.clickOnShoppingCart();
 	}
 	
-	@When("^I click on Contact us button$")
-	public void clickOncontactUsButton() {
-		homepagePage.clickOnContactButton();
-	}
 }
