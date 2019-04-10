@@ -57,6 +57,7 @@ public class ProductPage extends PageObject {
 	}
 	
 	public void clickOnProceedToCheckout() {
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(proceedToCheckout));
 		proceedToCheckout.click();
 	}	
 	/**
