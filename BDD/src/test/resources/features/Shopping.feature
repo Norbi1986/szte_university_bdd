@@ -1,5 +1,5 @@
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Shopping Cart
+  I want to add some items into the shopping cart
 
   @shop
   Scenario: Add items into the shopping cart

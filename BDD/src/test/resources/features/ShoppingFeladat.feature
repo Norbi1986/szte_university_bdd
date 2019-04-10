@@ -1,5 +1,5 @@
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Delete Items
+  I want to delete items from the shopping cart
 
   
   Scenario: Add items into the shopping cart
@@ -11,7 +11,6 @@ Feature: Title of your feature
 		When I set Size to "M"
 		Then I see the selecte Size is "M"
 		When I click on Add to cart button
-		And I click on continue shopping
 		And I click on Proceed To Checkout
 		Then I see the shopping cart page
 		And I see the added items

@@ -1,5 +1,5 @@
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Contact us
+  I want to test the contact us
 
   
   Scenario: Add items into the shopping cart

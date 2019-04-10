@@ -1,5 +1,5 @@
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: Login
+  I want to login with valid and invalid user
 
   
   Scenario Outline: Login test
@@ -11,6 +11,6 @@ Feature: Title of your feature
     Then The account title should be <accountTitle>
 
     Examples:
-      | user                    | password | accountTitle             |
-      | epamuser.test.szte@gmail.com | Tester123  | Welcome to your account. |
-      | epamuser.test.szte@gmail.com | usertest | Authentication failed. |
+      | user                    		 | password | accountTitle            |
+      | epamuser.test.szte@gmail.com | Tester123| Welcome to your account.|
+      | epamuser.test.szte@gmail.com | usertest | Authentication failed.  |

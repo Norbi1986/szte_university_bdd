@@ -3,7 +3,9 @@ package com.epam.szte.bdd.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.szte.bdd.utils.PageObject;
 
@@ -49,10 +51,12 @@ public class ProductPage extends PageObject {
 	}
 	
 	public void clickOnContinueShoppingButton() {
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(continueShopping));
 		continueShopping.click();
 	}
 	
 	public void clickOnProceedToCheckout() {
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(proceedToCheckout));
 		proceedToCheckout.click();
 	}	
 	/**
