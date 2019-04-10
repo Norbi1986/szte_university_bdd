@@ -47,6 +47,17 @@ public class HomepagePage extends PageObject {
 	public void clickOnShoppingCart() {
 		shoppingCart.click();
 	}
+	
+	/**
+	 * Órai Feladat
+	 */
+	
+	@FindBy(css="#contact-link")
+	private WebElement contactButton;
+	
+	public void clickOnContactButton() {
+		contactButton.click();
+	}
 
 	
 }

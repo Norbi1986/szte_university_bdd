@@ -35,4 +35,13 @@ public class HomepageStep {
 		homepagePage.clickOnShoppingCart();
 	}
 	
+	/**
+	 * Órai Feladat
+	 */
+	
+	@When("^I click on Contact us button$")
+	public void clickOncontactUsButton() {
+		homepagePage.clickOnContactButton();
+	}
+	
 }

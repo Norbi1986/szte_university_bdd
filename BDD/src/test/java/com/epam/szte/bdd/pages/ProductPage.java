@@ -60,6 +60,7 @@ public class ProductPage extends PageObject {
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(proceedToCheckout));
 		proceedToCheckout.click();
 	}	
+	
 	/**
 	 * Órai Feladat
 	 */

@@ -56,4 +56,20 @@ public class ShoppingCartStep {
 		}
 	}
 	
+	/**
+	 * Órai Feladat
+	 */
+	
+	private static String CART_IS_EMPTY = "cart is empty";
+	
+	@When("^I click on delete button$")
+	public void clickOnDeleteButton() {
+		shoppingCartPage.clicOndeleteButton();
+	}
+	
+	@Then("^I can see the cart is empty$")
+	public void checkEmptyCartAlert() {
+		assertThat(shoppingCartPage.getAlertMessage(), containsString(CART_IS_EMPTY));
+	}
+	
 }
