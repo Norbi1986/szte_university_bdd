@@ -13,5 +13,5 @@ Feature: Search
   	Given I open the My Store page
 		When I type the "Dress" on search field
 		And I click on Search button
-		And I select the "Printed Chiffon Dress" product
-		Then I see the "Printed Chiffon Dress" product page
+		And I select the "Printed Summer Dress" product
+		Then I see the "Printed Summer Dress" product page

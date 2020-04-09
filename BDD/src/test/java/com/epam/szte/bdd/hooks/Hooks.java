@@ -1,5 +1,7 @@
 package com.epam.szte.bdd.hooks;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,6 +16,7 @@ public class Hooks {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS) ;
 	}
 	
 	@After
