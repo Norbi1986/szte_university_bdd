@@ -3,8 +3,8 @@ package com.epam.szte.bdd.steps;
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.HomepagePage;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 public class HomepageStep {
 
