@@ -2,13 +2,13 @@ package com.epam.szte.bdd.steps;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
-
-import org.junit.Assert;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.SearchResultsPage;
 
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Then;
+
 
 public class SearchResultStep {
 	
@@ -18,7 +18,7 @@ public class SearchResultStep {
 	
 	@Then("^I see the page redirected to the search result page$")
 	public void searchResultPageisDisplayed() {
-		Assert.assertThat(searchResultsPage.getSearchResultHeader(), is(containsString(SEARCH)));
+		assertThat(searchResultsPage.getSearchResultHeader(), is(containsString(SEARCH)));
 	}
 
 }

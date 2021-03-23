@@ -1,30 +1,23 @@
 package com.epam.szte.bdd.steps;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.beans.SamePropertyValuesAs.samePropertyValuesAs;
 import static org.hamcrest.core.StringContains.containsString;
-import static org.hamcrest.core.Every.everyItem;
-import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
+
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.hamcrest.collection.IsIterableContainingInAnyOrder;
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.epam.szte.bdd.dao.Product;
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.ShoppingCartPage;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.datatable.DataTable;
 
 public class ShoppingCartStep {
@@ -33,10 +26,10 @@ public class ShoppingCartStep {
 
 	@Then("^I see the shopping cart page$")
 	public void shoppingCartPageIsDisplayed() {
-		Assert.assertTrue("The shopping cart page is not displayed", shoppingCartPage.shoppingCartIsDisplayed()); 
+		assertTrue("The shopping cart page is not displayed", shoppingCartPage.shoppingCartIsDisplayed()); 
 	}
 	
-	@Then("I see the added items")
+	@Then("^I see the added items$")
 	public void checkTheAddedItems(DataTable dt) {
 		List<Map<String, String>> list = dt.asMaps(String.class, String.class);
 		List<Product> actualProducts = shoppingCartPage.getProducts();

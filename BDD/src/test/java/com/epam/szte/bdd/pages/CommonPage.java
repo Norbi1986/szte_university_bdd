@@ -11,8 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.epam.szte.bdd.utils.PageObject;
 
-import net.bytebuddy.implementation.bytecode.Throw;
-
 public class CommonPage extends PageObject {
 
 	private WebDriver driver;

@@ -5,14 +5,14 @@ import org.junit.Assert;
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.ProductPage;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class ProductStep {
 
 	private ProductPage productPage = new ProductPage(Hooks.driver);
-
-	@Then("I see the \"([^\"]*)\" product page$")
+	
+	@Then("^I see the \"([^\"]*)\" product page$")
 	public void seeTheSelectedProduct(String productName) {
 		Assert.assertEquals(productName, productPage.getSelectedProductName());
 	}

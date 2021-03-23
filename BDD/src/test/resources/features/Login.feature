@@ -1,7 +1,7 @@
 Feature: Login
   I want to login with valid and invalid user
 
-  
+
   Scenario Outline: Login test
     Given I open the My Store page
     When I click on the Sign in button

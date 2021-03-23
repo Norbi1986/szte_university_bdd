@@ -1,12 +1,13 @@
 package com.epam.szte.bdd.steps;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.ContactPage;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class ContactStep {
 	
@@ -14,7 +15,7 @@ public class ContactStep {
 	
 	@Then("^I can see the contuct us page$")
 	public void theConatactPageIsVisible() {
-		Assert.assertTrue("The Contact page is not displayed", contactPage.contactPageIsVisible());
+		assertTrue("The Contact page is not displayed", contactPage.contactPageIsVisible());
 	}
 	
 	@When("^I select \"([^\"]*)\" Subject Heading$")
@@ -39,7 +40,7 @@ public class ContactStep {
 	
 	@Then("^I see my message is \"([^\"]*)\"$")
 	public void checkMyMessage(String message) {
-		Assert.assertEquals(message, contactPage.getMessage());
+		assertEquals(message, contactPage.getMessage());
 	}
 
 }

@@ -1,12 +1,11 @@
 package com.epam.szte.bdd.steps;
 
-import org.junit.Assert;
-
+import static org.junit.Assert.assertTrue;
 import com.epam.szte.bdd.hooks.Hooks;
 import com.epam.szte.bdd.pages.LoginPage;
 
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class LoginStep {
 	
@@ -27,12 +26,12 @@ public class LoginStep {
 		loginPage.clickOnLoginButton();
 	}
 	
-	@Then("I redirect to the login page")
+	@Then("^I redirect to the login page$")
 	public void redirectedToLoginPage() {
-		Assert.assertTrue("The login form hasn't appeared", loginPage.checkLoginForm());
+		assertTrue("The login form hasn't appeared", loginPage.checkLoginForm());
 	}
 	
-	@When("I login with (.+) emailaddress and (.+) password")
+	@When("^I login with (.+) emailaddress and (.+) password$")
 	public void loginWithEmailAndPassword(String emailAddress, String password) {
 		loginPage.writeEmailAddress(emailAddress);
 		loginPage.writePassword(password);
