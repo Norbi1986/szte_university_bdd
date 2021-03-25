@@ -30,12 +30,6 @@ public class HomepagePage extends PageObject {
 	
 	public void clickOnsigInButton() {
 		signInButton.click();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			System.out.println(e);
-			e.printStackTrace();
-		}
 	}
 	
 	public void openMyStorePage() {
