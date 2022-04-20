@@ -39,9 +39,6 @@ public class HomepageStep {
 	 * Órai Feladat
 	 */
 	
-	@When("^I click on Contact us button$")
-	public void clickOncontactUsButton() {
-		homepagePage.clickOnContactButton();
-	}
+
 	
 }
